@@ -1,0 +1,68 @@
+/* Shared CSS */
+
+.primary-color{
+    color: #FF42A5;
+}
+
+/* navigation bar */
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    background-color: #FFFFFF;
+    align-items: center;
+}
+.header-title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+}
+nav > ul{
+    list-style: none;
+    gap: 30px;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+.follow-on > a{
+    margin-left: 5px;
+}
+.follow-on{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+/* Banner section */
+
+.banner-container{
+    background-color: aliceblue;
+    padding: 0px 100px 20px 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.banner-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.play-like-the{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.goat{
+    background: -webkit-linear-gradient(#F948B2, #8758F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 95px;
+    font-weight: bolder;
+}
+.banner-description ul{
+    list-style: none;
+}
