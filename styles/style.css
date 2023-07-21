@@ -29,6 +29,7 @@ nav > ul{
 nav li a{
     text-decoration: none;
     color: black;
+    font-size: 18px;
 }
 .follow-on > a{
     margin-left: 5px;
@@ -41,28 +42,78 @@ nav li a{
 /* Banner section */
 
 .banner-container{
-    background-color: aliceblue;
-    padding: 0px 100px 20px 100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    background-color: whitesmoke;
+    padding: 0px 100px 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
 }
 .banner-description{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
+}
+.banner-description li {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 .play-like-the{
-    font-size: 3rem;
+    font-size: 55px;
     font-weight: 600;
 }
 .goat{
     background: -webkit-linear-gradient(#F948B2, #8758F1);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 95px;
+    -webkit-background-clip: text;
+    font-size: 90px;
     font-weight: bolder;
 }
 .banner-description ul{
     list-style: none;
+    text-align: left;
+}
+.btn-primary{
+    border: none;
+    border-radius: 40px;
+    background-color: #FF42A5;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: white;
+
+}
+.btn-secondary{
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 40px;
+    margin-top: 10px;
+    color: white;
+    background-color: #4EC5F7;
+}
+
+/* Responsive layout */
+
+/* for mobile device */
+
+@media only screen and (max-width: 425px){
+    nav{
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner-container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 20px;
+    }
+    .banner-container img{
+        width: 425px;
+        height: 350px;
+    }
 }
